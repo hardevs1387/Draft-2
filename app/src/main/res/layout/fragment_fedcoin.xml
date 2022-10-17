@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_rectangle"
+        android:padding="4dp"
+        android:src="@drawable/vector_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fed_tv"
+        style="@style/HeadingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/fedcoin"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGoBack" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/fed_round_icon"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:src="@drawable/coin_icon"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/fed_tv" />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fedcoin_blnc"
+        style="@style/regularTV"
+        android:drawableLeft="@drawable/coin_icon"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Fedcoin balance"
+        android:layout_marginTop="16dp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/fed_tv"
+        app:layout_constraintTop_toBottomOf="@+id/fed_tv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/regularTV"
+        android:background="@drawable/border_rectangle"
+        android:padding="12dp"
+        android:text="4.6"
+        app:layout_constraintBottom_toBottomOf="@+id/fedcoin_blnc"
+        app:layout_constraintStart_toEndOf="@+id/fedcoin_blnc"
+        app:layout_constraintTop_toBottomOf="@+id/fedcoin_blnc"
+        app:layout_constraintTop_toTopOf="@+id/fedcoin_blnc" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border_rectangle"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fedcoin_blnc">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fed_university_tv"
+            style="@style/HeadingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="You have received the following Federation University Merchandise. "
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/image1"
+            layout="@layout/imgae_view_with_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fed_university_tv" />
+
+        <include
+            android:id="@+id/image2"
+            layout="@layout/imgae_view_with_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fed_university_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fed_coin_textview"
+        style="@style/regularTV"
+        android:text="Fedcoin balance can be trade into gift hamper at Federation University. "
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

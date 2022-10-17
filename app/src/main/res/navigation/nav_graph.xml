@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.draft1.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_home"
+            app:destination="@id/homeActivity"
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.draft1.HomeActivity"
+        android:label="@string/title_home" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.draft1.LoginFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_login_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_login_to_Home"
+            app:destination="@+id/homeActivity"
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.draft1.RegisterFragment"
+        android:label="fragment_second2"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_register_to_Home"
+            app:destination="@+id/homeActivity"
+
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+</navigation>

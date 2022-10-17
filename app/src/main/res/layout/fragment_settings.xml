@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/menu_logo"-->
+    <!--        android:layout_width="181dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:fontFamily="@font/audiowide"-->
+    <!--        android:scaleY="0.9"-->
+    <!--        android:text="Menu"-->
+    <!--        android:textColor="#0F55C1"-->
+    <!--        android:textSize="34sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.143"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.026" />-->
+
+    <include
+        android:id="@+id/menu_header"
+        layout="@layout/menu_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_name"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-16dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Name"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_profile"
+                app:iconSize="70dp"
+                app:iconTint="@color/black" />
+
+            <Button
+                android:id="@+id/btn_account_info"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Account Information"
+                app:icon="@drawable/ic_profile" />
+
+            <Button
+                android:id="@+id/btn_location"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Location Sharing"
+                app:icon="@drawable/ic_location" />
+
+
+            <Button
+                android:id="@+id/btn_token_fragment"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Tokens"
+                app:icon="@drawable/ic_token" />
+
+            <Button
+                android:id="@+id/btn_shop"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Marketplace"
+                android:textAlignment="textStart"
+                app:icon="@drawable/ic_marketplace" />
+
+            <Button
+                android:id="@+id/btn_contribution"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Contribute"
+                android:textAlignment="textStart"
+                app:icon="@drawable/ic_contribute2"
+                app:iconSize="40dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground">
+
+                <Button
+                    android:id="@+id/btn_notification"
+                    style="@style/menuItem"
+                    android:layout_width="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Notifications"
+                    app:icon="@drawable/ic_notifications_black_24dp" />
+
+                <!--                <Switch-->
+                <!--                    android:id="@+id/switch1"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_alignParentEnd="true"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginEnd="16dp"-->
+                <!--                    android:padding="4dp"-->
+                <!--                    android:text="OFF" />-->
+            </RelativeLayout>
+            <!--    <Button-->
+            <!--        android:id="@+id/button"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:backgroundTint="#FFFFFF"-->
+            <!--        android:hapticFeedbackEnabled="true"-->
+
+            <!--        android:text="3.9"-->
+            <!--        android:textAlignment="textStart"-->
+            <!--        android:textColor="#000000"-->
+            <!--        app:cornerRadius="20dp"-->
+            <!--        app:icon="@drawable/ic_token"-->
+            <!--        app:iconSize="30dp"-->
+            <!--        app:iconTint="#000000"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintHorizontal_bias="0.946"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toTopOf="parent"-->
+            <!--        app:layout_constraintVertical_bias="0.027"-->
+            <!--        app:strokeColor="#000000"-->
+            <!--        app:strokeWidth="1dp" />-->
+
+            <Button
+                android:id="@+id/btn_help"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Help and Feedback"
+                app:icon="@drawable/ic_help" />
+
+            <Button
+                android:id="@+id/btn_about"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="About"
+                app:icon="@drawable/ic_about" />
+
+            <Button
+                android:id="@+id/btn_privacy"
+                style="@style/menuItem"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Privacy"
+                app:icon="@drawable/ic_privacy" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

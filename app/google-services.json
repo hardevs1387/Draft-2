@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "324291357155",
+    "firebase_url": "https://fed-art-default-rtdb.firebaseio.com",
+    "project_id": "fed-art",
+    "storage_bucket": "fed-art.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324291357155:android:44826bf38d5d177e9c98d6",
+        "android_client_info": {
+          "package_name": "com.example.draft1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324291357155-bf5uf8htknq80sme26p2o0jlc09928jn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpfZjOiTiBPjN97pYI_oehuKCAhFZXbGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324291357155-bf5uf8htknq80sme26p2o0jlc09928jn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

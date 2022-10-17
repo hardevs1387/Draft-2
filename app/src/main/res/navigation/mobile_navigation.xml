@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.draft1.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/settings"
+            app:destination="@id/settings_navigation" />
+
+        <action
+            android:id="@+id/fedcoin"
+            app:destination="@id/navigation_fedcoin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.example.draft1.ui.discover.DiscoverFragment"
+        android:label="@string/discover"
+        tools:layout="@layout/fragment_discover" />
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.draft1.ui.Camera.CameraFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.example.draft1.ui.maps.MapsFragment"
+        android:label="@string/title_maps"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/navigation_contribute"
+        android:name="com.example.draft1.ui.contribute.contributeFragment"
+        android:label="@string/contribute"
+        tools:layout="@layout/fragment_contribute" />
+
+    <fragment
+        android:id="@+id/navigation_fedcoin"
+        android:name="com.example.draft1.ui.settings.FedCoinFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_fedcoin" />
+
+    <fragment
+        android:id="@+id/navigation_details2"
+        android:name="com.example.draft1.ui.home.Details2Fragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_details2" />
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.example.draft1.ui.home.DetailsFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_details" />
+
+    <include app:graph="@navigation/settings_navigation" />
+</navigation>

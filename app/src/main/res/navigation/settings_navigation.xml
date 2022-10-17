@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_navigation"
+    app:startDestination="@+id/settings">
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.draft1.ui.settings.SettingsFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.draft1.ui.settings.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_location_sharing"
+        android:name="com.example.draft1.ui.settings.LocationSharingFragment"
+        android:label="@string/location_sharing"
+        tools:layout="@layout/fragment_location_sharing" />
+
+    <fragment
+        android:id="@+id/navigation_fedcoin"
+        android:name="com.example.draft1.ui.settings.FedCoinFragment"
+        android:label="@string/fedcoin"
+        tools:layout="@layout/fragment_fedcoin" />
+
+    <fragment
+        android:id="@+id/navigation_marketplace"
+        android:name="com.example.draft1.ui.settings.MarketFragment"
+        android:label="@string/marketplace"
+        tools:layout="@layout/fragment_fedcoin" />
+
+    <fragment
+        android:id="@+id/navigation_contribution"
+        android:name="com.example.draft1.ui.contribute.contributeFragment"
+        android:label="@string/contribute"
+        tools:layout="@layout/fragment_contribute" />
+
+    <fragment
+        android:id="@+id/navigation_notitfication"
+        android:name="com.example.draft1.ui.settings.NotificationFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.example.draft1.ui.settings.HelpFragment"
+        android:label="@string/help_feedback"
+        tools:layout="@layout/fragment_help_and_feedback" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.example.draft1.ui.settings.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/navigation_privacy"
+        android:name="com.example.draft1.ui.settings.PrivacyFragment"
+        android:label="@string/privacy"
+        tools:layout="@layout/fragment_privacy" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.draft1.MainActivity"
+        android:label="@string/title_home" />
+
+
+</navigation>

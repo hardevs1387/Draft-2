@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <include layout="@layout/menu_header"
+        android:id="@+id/header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/text_home"
+                style="@style/HeadingTV"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="24dp"
+                android:text="@string/welcome"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/dscr"
+                style="@style/regularTV"
+                android:layout_below="@+id/text_home"
+                android:layout_alignStart="@+id/text_home"
+                android:layout_alignEnd="@+id/text_home"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:text="@string/welcome_to_fedart_tourist_guide_application_brisbane_this_beautiful_city_has_a_river_going_from_the_heart_of_the_city"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tg_heading"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dscr"
+                android:layout_marginTop="24dp"
+                android:text="@string/brisbane_tour_guide"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_heading"
+
+                android:src="@drawable/home_img1" />
+
+            <TextView
+                android:id="@+id/areaTV"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/souht_bank"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tg_heading2"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaTV"
+                android:layout_marginTop="24dp"
+                android:text="@string/art_gallery"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_heading2"
+
+                android:src="@drawable/home_img2" />
+
+            <TextView
+                android:id="@+id/areaTV2"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/ann_st"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tg_heading3"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaTV2"
+                android:layout_marginTop="24dp"
+                android:text="@string/brisbane_tour_guide"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_heading3"
+
+                android:src="@drawable/home_img1" />
+
+            <TextView
+                android:id="@+id/areaTV3"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/souht_bank"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
